@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css"> 
+  <title>Frontend Mentor | Calculator app</title>
+  <link rel="stylesheet" href=""> 
+</head>
+<body class="body">
+<main>
+    <div class="main-container calculator">
+       <div class="header">
+           <div class="logo">
+               <h1>Calc</h1>
+           </div>
+           
+           <div class="theme-wrapper">
+                <div class='theme-container'>
+                      <div class="theme-number">
+                          <span class="t-n">1</span>
+                          <span class="t-n">2</span>
+                          <span class="t-n">3</span>
+                      </div>
+                      <div class="theme-toggle theme1">
+                          <i class="indicator">
+                              
+                          </i>
+                      </div>
+               </div>
+           </div>
+       </div>
+       <div class="calc-display">
+             <h1 class="display"></h1>
+       </div>
+       
+       <div class="calc-keyspad">
+            <input type="button" value="7" class="btn seven">
+            <input type="button" value="8" class="btn eight">
+            <input type="button" value="9" class="btn nine">      
+            <input type="button" value="DEL" class="btn delete" data-action="delete">
+            <input type="button" value="4" class="btn four">
+            <input type="button" value="5" class="btn five">
+            <input type="button" value="6" class="btn six">
+            <input type="button" value="+" class="btn key--operator" data-action="add">
+            <input type="button" value="1" class="btn one">
+            <input type="button" value="2" class="btn two">
+            <input type="button" value="3" class="btn three">
+            <input type="button" value="-" class="btn minus" data-action="substract">
+            <input type="button" value="." class="btn dot" data-action="decimal">
+            <input type="button" value="0" class="btn zero">
+            <input type="button" value="/" class="btn key--operator" data-action="divide">
+            <input type="button" value="x" class="btn kep--operator" data-action="multiply">
+            <input type="button" value="RESET" class="btn key--reset" data-action="reset">
+            <input type="button" value="=" class="btn key--equal" data-action="calculate">
+       </div>
+         
+    </div>
+</main>
+
+  <footer>
+    <div class="attribution">
+         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+         Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </footer>
+
+   <script src="./main.js"></script>
+</body>
+</html>

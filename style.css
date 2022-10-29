@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&display=swap');
+
+body{
+ background-color:hsl(222, 26%, 31%);
+ transition: 0.5s;
+}
+
+.body.theme2 {
+  background-color: hsl(0, 0%, 90%);
+}
+
+.body.theme2 .logo {
+  color: hsl(224, 36%, 15%);
+}
+
+.body.theme2 .t-n {
+  color: hsl(224, 36%, 15%);
+}
+
+.body.theme2 .display{
+  background-color:  hsl(0, 0%, 93%);
+  color: hsl(224, 36%, 15%);
+}
+
+.body.theme3{
+  background-color: hsl(268, 75%, 9%);
+}
+
+.body.theme3 .logo {
+ color: hsl(52, 100%, 62%);
+}
+
+.body.theme3 .display{
+  background-color: hsl(268, 71%, 12%);
+  color: hsl(52, 100%, 62%);
+}
+
+.body.theme3 .t-n {
+  color: hsl(52, 100%, 62%);
+}
+
+main{
+ height: 100vh;
+ display: flex;
+ align-items: center;
+}
+*{
+ font-family: 'League Spartan', sans-serif;
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+}
+
+.main-container{
+ width: 300px;
+ margin: 0 auto;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logo{
+ /* margin-bottom: 20px; */
+ color: hsl(0, 0%, 100%);
+ font-size: 16px;
+}
+
+.theme-toggle{
+  position: relative;
+  height: 20px;
+  width: 60px;
+  background-color: hsl(223, 31%, 20%);
+  border-radius: 20px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.theme-toggle.theme2{
+  background-color: hsl(0, 5%, 81%);
+}
+
+.theme-toggle.theme3{
+  background-color: hsl(268, 71%, 12%);
+}
+
+.indicator{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  transform: scale(0.7);
+  background-color:hsl(6, 63%, 50%);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.theme-toggle.theme2 .indicator{
+  left: 20px;
+  background-color:hsl(25, 98%, 40%);
+}
+
+.theme-toggle.theme3 .indicator{
+  left: 40px;
+  background-color: hsl(176, 100%, 44%);
+}
+
+.theme-wrapper{
+  display: flex;
+  /* align-items: center; */
+}
+
+.theme-container{
+  margin-left: 20px;
+}
+
+.theme-number{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5px;
+  margin-bottom: 5px;
+}
+
+.theme-number span{
+  color: hsl(0, 0%, 100%);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+
+.display{
+ background-color: hsl(224, 36%, 15%);
+ color: hsl(0, 0%, 100%);
+ font-size: 30px;
+ text-align: right;
+ border-radius: 4px;
+ padding: 20px 10px;
+ font-weight: 700;
+ width: 100%;
+ border: none;
+ caret-color: transparent;
+ transition: 0.5s;
+ height: 68px;
+ margin-bottom: 10px;
+ overflow-x: hidden;
+}
+
+
+
+.calc-keyspad{
+ display: grid;
+ grid-template-columns: repeat(4, 1fr);
+ gap: 10px;
+ background-color: hsl(223, 31%, 20%);
+ padding: 10px;
+ border-radius: 4px;
+ 
+}
+
+.calc-keyspad.theme2{
+  background-color: hsl(0, 5%, 81%);
+}
+
+.calc-keyspad.theme2 .btn {
+  background-color: hsl(45, 7%, 89%);
+  box-shadow: 0 4px 0 -1px hsl(35, 11%, 61%);
+  color: hsl(198, 20%, 13%);
+}
+
+.calc-keyspad.theme2 .key--equal{
+  background-color:hsl(25, 98%, 40%);
+  box-shadow: 0 4px 0 -2px hsl(6, 70%, 34%);
+  color: hsl(0, 0%, 90%);
+}
+
+.calc-keyspad.theme3{
+  background-color: hsl(268, 71%, 12%);
+}
+
+.calc-keyspad.theme3 .btn {
+  background-color: hsl(268, 47%, 21%);
+  box-shadow: 0 4px 0 -1px hsl(290, 70%, 36%);
+  color: hsl(52, 100%, 62%);
+}
+
+
+
+.calc-keyspad.theme2 .key--reset,
+.calc-keyspad.theme2 .delete {
+  background-color: hsl(185, 42%, 37%);
+  box-shadow: 0 4px 0 -1px hsl(185, 58%, 25%);
+  color: hsl(0, 0%, 90%);
+}
+
+.btn{
+ padding: 10px;
+ background-color: hsl(30, 25%, 89%);
+ border: none;
+ color: hsl(221, 14%, 31%);
+ font-weight: 700;
+ font-size: 16px;
+ border-radius: 4px;
+ cursor: pointer;
+ box-shadow: 0 4px 0 -1px hsl(28, 16%, 65%);
+}
+
+.btn:hover{
+ background-color: hsl(0, 0%, 98%);
+}
+
+
+
+.key--reset{
+  grid-column: span 2;
+  background-color: hsl(225, 21%, 49%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: 0 4px 0 -2px hsl(224, 28%, 35%);
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+.key--reset:hover{
+  background-color: hsl(226, 42%, 68%);
+  
+}
+.key--equal{
+grid-column: span 2;
+background-color: hsl(6, 63%, 50%);
+box-shadow: 0 4px 0 -2px hsl(6, 70%, 34%);
+color: hsl(0, 0%, 100%);
+}
+
+.key--equal:hover{
+ background-color: hsl(6, 86%, 60%);
+ 
+}
+
+.delete{
+  background-color: hsl(225, 21%, 49%);
+  box-shadow: 0 4px 0 -2px hsl(224, 28%, 35%);
+  color: hsl(0, 0%, 100%);
+}
+
+.delete:hover{
+  background-color: hsl(226, 42%, 68%);
+ 
+}
+
+.attribution { 
+ font-size: 11px; 
+ text-align: center; 
+}
+.attribution a { 
+ color: hsl(228, 45%, 44%); 
+}
+
+
+
